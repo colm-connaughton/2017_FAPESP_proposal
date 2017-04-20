@@ -1,0 +1,69 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[11pt]{article}
+\usepackage{pgfgantt}
+\usepackage[english]{babel}
+\usepackage{palatino}
+\usepackage{helvet}
+\usepackage{times}
+\usepackage{layout}
+\usepackage[a4paper,top=2.0cm, right=2.0cm, bottom=2.0cm, left=2.0cm]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+
+\DeclareCaptionFont{xipt}{\fontsize{11}{11} \fontfamily{phv}\fontseries{mc}\selectfont}
+\usepackage[font=xipt,labelfont=bf]{caption}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{{\hvnb FAPESP SPRINT proposal: Dynamical processes on multilayer and dynamic networks}}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+\newcommand*{\helvetica}{\fontfamily{phv}\selectfont}
+\newcommand*{\helveticanarrow}{\fontfamily{phv}\fontseries{mc}\selectfont}
+\newcommand*{\hvnb}{\fontfamily{phv}\fontseries{bc}\selectfont}
+\newcommand*{\palatino}{\fontfamily{ppl}\selectfont}
+\newcommand*{\timesroman}{\fontfamily{ptm}\selectfont}
+
+% Support for multiple bibliographies
+\usepackage{natbib}
+%\usepackage{multibib}
+%\newcites{TR}{\normalsize \hvnb Track record references}
+%\newcites{CS}{\normalsize \hvnb Case for support references}
+%\bibliographystyleTR{unsrt}
+%\bibliographystyleCS{plain}
+\bibliographystyle{plain}
+
+\usepackage[compact]{titlesec}
+\usepackage{lipsum}
+\usepackage{xcolor}
+
+\titleformat{\section}
+  {\large\hvnb\color{blue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\hvnb}{\thesection}{1em}{}
+
+%\input definitions.tex
+  
+\begin{document}
+\helveticanarrow
+\setlength{\bibsep}{0.2pt}
+
+
+%
+% Case for support
+%
+\setcounter{page}{1}
+\rhead{\hvnb Research description}
+\rfoot{\thepage\ of\ 5}
+\input caseforsupport
+\bibliography{references}
+\end{document}
+
