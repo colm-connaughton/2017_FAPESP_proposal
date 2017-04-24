@@ -51,7 +51,11 @@
   {\hvnb}{\thesubsection}{1em}{}
 
 %\input definitions.tex
-  
+ % Commands to make list environments more space efficient
+ \newcommand{\myitemsep}{-0.2em}
+\setlist[itemize]{topsep=0pt}
+\setlist[enumerate]{topsep=0pt}
+
 \begin{document}
 \helveticanarrow
 \setlength{\bibsep}{0.2pt}
